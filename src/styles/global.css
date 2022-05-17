@@ -5,3 +5,10 @@
 body {
 	@apply bg-background-light dark:bg-background-dark dark:text-zinc-100;
 }
+
+.scrollbar-thumb-rounded {
+}
+
+.scrollbar-thumb-rounded::-webkit-scrollbar-thumb {
+	border-radius: 99999px;
+}
