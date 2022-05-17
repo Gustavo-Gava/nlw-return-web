@@ -21,11 +21,23 @@ module.exports = {
 					secondary: {
 						dark: "#27272A",
 						light: "#F4F4F5",
+						hover: {
+							dark: "#3F3F46",
+							light: "#E4E4E7",
+						},
 					},
 				},
-				text: {},
+				text: {
+					primary: {
+						dark: "#F4F4F5",
+					},
+				},
+				stroke: {
+					dark: "#52525B",
+					light: "#D4D4D8",
+				},
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 }
