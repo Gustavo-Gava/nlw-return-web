@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button({ title, ...rest }: ButtonProps) {
 	return (
 		<button
-			className="bg-brand-500 py-2 px-8 text-sm rounded-[4px] flex-1 hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors"
+			className="bg-brand-500 py-2 px-8 text-sm rounded-[4px] flex-1 disabled:opacity-50 disabled:hover:bg-brand-500 hover:bg-brand-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-brand-500 transition-colors"
 			{...rest}
 		>
 			{title}
